@@ -1,0 +1,228 @@
+:root {
+  --main-bg-color: rgb(32, 30, 30);
+  --TextWhite-color: rgb(252, 252, 252);
+  --TextBlack-color: rgb(32, 30, 30);
+}
+
+.BColor1 {
+  background-color: var(--main-bg-color);
+}
+.FontColor1 {
+  color: var(--TextWhite-color);
+}
+.FontColor2 {
+  color: var(--TextBlack-color);
+}
+
+.zeropadding {
+  padding: 0;
+  margin: 0;
+}
+html body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.Center {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.SpacedEvenly {
+  justify-content: space-around;
+}
+.SpacedBetween {
+  justify-content: space-between;
+}
+.div {
+  margin: 0;
+}
+.Row {
+  display: flex;
+  flex: row;
+}
+.RowColumn {
+  display: flex;
+  flex-direction: row;
+}
+
+.Full {
+  width: 100%;
+}
+.MidWay {
+  width: 75%;
+}
+.Column {
+  display: flex;
+  flex-direction: Column;
+}
+
+.ColumnView {
+  column-count: 2;
+  column-gap: 50px;
+}
+
+.Right {
+  margin-left: auto;
+}
+.TextLeft {
+  text-align: left;
+}
+
+.RowColumn {
+  display: flex;
+  flex-direction: row;
+}
+
+ul {
+  margin: 0;
+  padding: 1%;
+}
+
+li {
+  list-style-type: none;
+  border-width: 2px;
+  padding: 1%;
+  border-bottom-style: solid;
+  border-bottom-color: var(--main-bg-color);
+}
+
+li:nth-of-type(odd):hover {
+  border-bottom-style: solid;
+  border-bottom-color: coral;
+  cursor: pointer;
+}
+
+li:nth-of-type(even):hover {
+  border-bottom-style: solid;
+  border-bottom-color: rgb(80, 185, 255);
+  cursor: pointer;
+}
+
+.noBorder {
+  border: none;
+}
+form {
+  background: rgb(162, 179, 177);
+  width: 100%;
+  border-radius: 10px;
+}
+.submit {
+  background-color: var(--main-bg-color);
+}
+
+.fontsize {
+  font-size: 20px;
+}
+
+div {
+  margin: 0;
+}
+
+.Padding {
+  padding: 2%;
+}
+
+input {
+  margin: 5px;
+  border-radius: 40px;
+  border-color: white;
+  padding: 8px;
+  outline: none;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background-color: none;
+  border-radius: 40px;
+  border-color: white;
+  padding: 2%;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  outline: none;
+  color: aliceblue;
+}
+.Background3 {
+  background: url("/images/Background3.jpg");
+}
+.MaximumImagesize {
+  height: 1000px;
+}
+.BorderBottom {
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.ConditionalImageSize {
+  width: 100%;
+}
+.Margin {
+  margin: 20px;
+}
+.MarginHorizontal {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.FlexToContainer {
+  flex: 1 0 auto;
+}
+
+.Middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 840px) {
+  .RowColumn {
+    display: flex;
+    flex: column;
+  }
+  .ConditionalCenter {
+    justify-content: center;
+    text-align: center;
+  }
+  .Right {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .TextLeft {
+    text-align: center;
+  }
+  li {
+    border-bottom-style: solid;
+    border-bottom-color: rgb(71, 71, 71);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 10px;
+  }
+  .RowColumn {
+    display: flex;
+    flex-direction: column;
+  }
+  .ConditionalImageSize {
+    width: 50%;
+  }
+  .ColumnView {
+    display: flex;
+    flex-direction: column;
+  }
+}
